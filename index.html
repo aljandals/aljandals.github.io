@@ -2,10 +2,10 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="https://fonts.googleapis.com/css?family=Roboto:400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Barlow|Roboto:700&display=swap" rel="stylesheet">
 <style>
 body, html, head {
-  font-family: 'Roboto', sans-serif;
+font-family: 'Barlow', sans-serif;
   background-color:rgb(240,240,240);opacity:0.9; /* off-white it */
   height: 100%;
   margin: auto;
@@ -21,6 +21,7 @@ p {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 50px;
   width: 30%;
 }
 </style>
@@ -51,8 +52,11 @@ var x = setInterval(function() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
   // Output the result in an element with id="countDown"
-  document.getElementById("countDown").innerHTML =" G20 Presidency Launch <br /> <br />" + days + " Days <br /> <br />" + hours + " Hours "
-  + minutes + " Minutes " + seconds + " Seconds ";
+  // document.getElementById("countDown").innerHTML ='<span style = "color: rgb(70,135,92); font-size: 120px; font-weight: 600; padding-top: 250px;  "  >  G20 Presidency Launch </span> <br />' + '<span style = "font-size: 120px; font-weight: 700;">' + days + "</span> Days  <br />" + hours + " Hours "
+  // + minutes + " Minutes " + seconds + " Seconds ";
+
+  document.getElementById("countDown").innerHTML ='<span style = "color: rgb(70,135,92); font-size: 120px; font-weight: 600; padding-top: 250px;  "  >  G20 Presidency Launch </span> <br />' + '<span style = "font-size: 300px; font-weight: 700;">' + days + "</span> Days  <br />";
+
 
    // document.getElementById("countDown").innerHTML = `${days} Days <br />`
    // document.getElementById("countDown").innerHTML = `${hours} Hours <br />`
