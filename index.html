@@ -36,7 +36,7 @@ body , head, html {
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 50px;
-  width: 50%;
+  width: 100%;
 }
 .inner-container{
   display: grid;
@@ -59,8 +59,8 @@ body , head, html {
   font-size: 30px;
   height: 100%;
   border-collapse: collapse;
-/*  width: 100%;
-*/}
+  width: 100%;
+}
 
 #meeting-table td, #meeting-table th {
 /*  border: 1px solid #ddd;
@@ -93,18 +93,23 @@ body , head, html {
   
 
   <div class="row">
-    <div class="col">
-      
-    <img class="bg" src="G20SS_logo.png">
-    </div>
-  </div>
-  <div class="row">
-    
-    <div class="col-3">
+    <div class="col-3 " align="center">
       
 <p id="countDown"></p>
     </div>
     <div class="col-6">
+      
+    <img class="bg" src="G20SS_logo.png">
+    </div>
+
+    <div class="col-3" align="center">
+      
+    <p id="countDown2"></p>
+    </div>
+  </div>
+  <div class="row">
+    
+    <div class="col">
       
       <table id="meeting-table">
     <tr>
@@ -148,55 +153,9 @@ body , head, html {
 
 </table>
     </div>
-    <div class="col-3">
-      
-    <p id="countDown2"></p>
-    </div>
 
   </div>
 </div>
-
-<!-- <div class="grid-container">
-  <div class="grid-item">
-
-
-  </div>
-  <div class="grid-item">
-    <img class="bg" src="G20SS_logo.png">
-  </div>
-  <div class="grid-item"></div>  
-  <div class="grid-item">
-
-
-  </div>
-
-
-
-
-  <div class="grid-item">
-
-  </div>  
-
-</div> -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
@@ -219,7 +178,7 @@ var x = setInterval(function() {
   // Time calculations for days, hours, minutes and seconds
   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
 
-  document.getElementById("countDown").innerHTML ='<span style = "color: rgb(70,135,92); font-size: 35px; font-weight: 400; padding-top: 250px;  "  >  G20 Presidency Launch </span> <br />' + '<span style = "font-size: 150px; font-weight: 300;">' + days + "<br /> </span> Days  ";
+  document.getElementById("countDown").innerHTML ='<span style = "color: rgb(70,135,92); font-size: 35px; font-weight: 800; padding-top: 250px;  "  >  G20 Presidency Launch </span> <br />' + '<span style = "font-size: 150px; font-weight: 300;">' + days + '<br /> </span> <span style = "font-size: 50px; font-weight: 300;">Days</span>  ';
 
   // If the count down is over, write some text 
   if (distance < 0) {
@@ -247,7 +206,7 @@ var y = setInterval(function() {
   // Time calculations for days, hours, minutes and seconds
   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
 
-  document.getElementById("countDown2").innerHTML ='<span style = "color: rgb(70,135,92); font-size: 35px; font-weight: 400; padding-top: 250px;  "  >  Summit </span> <br />' + '<span style = "font-size: 150px; font-weight: 300;">' + days + "<br /> </span> Days  ";
+  document.getElementById("countDown2").innerHTML ='<span style = "color: rgb(70,135,92); font-size: 35px; font-weight: 800; padding-top: 250px;  "  >  Summit </span> <br />' + '<span style = "font-size: 150px; font-weight: 300;">' + days + '<br /> </span> <span style = "font-size: 50px; font-weight: 300;">Days</span>  ';
 
   // If the count down is over, write some text 
   if (distance < 0) {
